@@ -1,1 +1,1 @@
-Custom Piper Voices created using demucs, whisperx and TextyMcSpeechy
+Custom Piper Voices created using demucs (htdemucs_ft), whisperx and TextyMcSpeechy
