@@ -8,7 +8,7 @@
     "voice": "en-us"
   },
   "language": {
-    "code": "en_us"
+    "code": "en-us"
   },
   "inference": {
     "noise_scale": 0.667,
