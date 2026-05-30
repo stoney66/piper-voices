@@ -51,7 +51,7 @@ for f in vocal_files/MST3K_S03E1*_trimmed.wav; do
 done
 ```
 
-# cat whisperx_files/XXXXX txt file for the speakers and figure out which one is your Speaker while playing audio from same vocal_file
+cat whisperx_files/XXXXX txt file for the speakers and figure out which one is your Speaker while playing audio from same vocal_file
 
 
 # Script usage
