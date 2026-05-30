@@ -13,6 +13,7 @@ source venv/bin/activate
 
 pip install ffmpeg
 pip install whisperx
+pip install demucs
 ```
 
 # Use demucs to grab vocals for single file
