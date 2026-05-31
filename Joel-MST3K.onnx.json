@@ -1,5 +1,5 @@
 {
-  "dataset": "tom_servo_medium",
+  "dataset": "Joel-MST3K",
   "audio": {
     "sample_rate": 22050,
     "quality": "medium"
@@ -11,9 +11,9 @@
     "code": "en-us"
   },
   "inference": {
-    "noise_scale": 0.4,
-    "length_scale": 1.1,
-    "noise_w": 0.5
+    "noise_scale": 0.667,
+    "length_scale": 1,
+    "noise_w": 0.8
   },
   "phoneme_type": "espeak",
   "phoneme_map": {},
