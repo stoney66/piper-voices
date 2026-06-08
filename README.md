@@ -69,7 +69,7 @@ cat speaker_clips/joel-complete/*_transcripts.txt > speaker_clips/joel-complete/
 sed -i 's/\.wav|/|/' speaker_clips/joel-complete//metadata.csv
 ```
 
-## check length all wav files dir walk
+## Check length all wav files dir walk
 ```
 python3 -c "
 import soundfile as sf
@@ -84,11 +84,11 @@ print(f'Total: {total/60:.1f} minutes')
 "
 ```
 
-## check wav length
+## Check wav length
 ```
 ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 speaker_clips/crow-s3/crow_s03e20_0007.wav
 ```
-## trim end of wav if needed
+## Trim end of wav if needed
 ```
 ffmpeg -i speaker_clips/crow-s3/crow_s03e20_0007.wav -t 1.6 -c copy crow_s03e20_0007.wav
 ```
@@ -111,7 +111,7 @@ cd ~/TextyMcSpeechy/tts_dojo/tom_servo_dojo
 ```
 start testing around epoch 5100-5200 and listen. Stop when it sounds good rather than hitting a fixed number.
 
-## manually run export of voice
+## Manually run export of voice
 ```
 cd ~/TextyMcSpeechy/tts_dojo/tom_servo_dojo/scripts
 bash utils/_tmux_piper_export.sh ../voice_checkpoints/epoch=4684-step=3120040.ckpt ../tts_voices/tom_servo_4684/en_US-tom_servo_4684-medium.onnx tom_servo_dojo
