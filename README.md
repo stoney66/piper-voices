@@ -63,6 +63,8 @@ cat whisperx_files/XXXXX txt file for the speakers and figure out which one is y
 ```
 python3 extract_speaker.py --speaker SPEAKER_11 --episode MST3K_S03E21_trimmed --tag crow_s03e21 --output crow-s3
 
+python3 extract_speaker.py --speaker SPEAKER_00 --episode JIMG/JIMG-20 --tag JIMG-1 --output JIMG
+
 python3 review_clips.py --input speaker_clips/crow-s3/
 
 python3 cleanup_transcripts.py --input speaker_clips/crow-s3/
