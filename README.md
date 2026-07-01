@@ -15,6 +15,8 @@ source venv/bin/activate
 pip install ffmpeg
 pip install whisperx
 pip install demucs
+pip install soundfile
+pip install yt-dlp
 ```
 
 yt-dlp -x --audio-format wav -o "%(title)s.%(ext)s" https://www.youtube.com/
