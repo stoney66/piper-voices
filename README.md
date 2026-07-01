@@ -17,6 +17,8 @@ pip install whisperx
 pip install demucs
 ```
 
+yt-dlp -x --audio-format wav -o "%(title)s.%(ext)s" https://www.youtube.com/
+
 ## Use demucs to grab vocals for single file
 ```
 demucs --two-stems=vocals -n htdemucs_ft -o . "MST3K_S03E23.mp4"
