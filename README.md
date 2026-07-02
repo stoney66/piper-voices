@@ -101,24 +101,24 @@ ffmpeg -i speaker_clips/crow-s3/crow_s03e20_0007.wav -t 1.6 -c copy crow_s03e20_
 
 ##### TextyMcSpeechy
 ```
-mkdir -p ~/TextyMcSpeechy/tts_dojo/DATASETS/tom_servo
+mkdir -p /storage/TextyMcSpeechy/tts_dojo/DATASETS/tom_servo
 
-cd ~/TextyMcSpeechy/tts_dojo
+cd /storage/TextyMcSpeechy/tts_dojo
 ./newdojo.sh tom_servo
 
 cp /storage/voice_training/speaker_clips/servo-complete/*.wav ~/TextyMcSpeechy/tts_dojo/DATASETS/tom_servo/
 cp /storage/voice_training/speaker_clips/servo-complete/metadata.csv ~/TextyMcSpeechy/tts_dojo/DATASETS/tom_servo/
 
-cd ~/TextyMcSpeechy/tts_dojo/DATASETS
+cd /storage/TextyMcSpeechy/tts_dojo/DATASETS
 ./create_dataset.sh tom_servo
 
-cd ~/TextyMcSpeechy/tts_dojo/tom_servo_dojo
+cd /storage/TextyMcSpeechy/tts_dojo/tom_servo_dojo
 ./run_training.sh
 ```
 start testing around epoch 5100-5200 and listen. Stop when it sounds good rather than hitting a fixed number.
 
 ## Manually run export of voice
 ```
-cd ~/TextyMcSpeechy/tts_dojo/tom_servo_dojo/scripts
+cd /storage/TextyMcSpeechy/tts_dojo/tom_servo_dojo/scripts
 bash utils/_tmux_piper_export.sh ../voice_checkpoints/epoch=4684-step=3120040.ckpt ../tts_voices/tom_servo_4684/en_US-tom_servo_4684-medium.onnx tom_servo_dojo
 ```
