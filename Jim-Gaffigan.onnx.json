@@ -1,5 +1,5 @@
 {
-  "dataset": "Jim_Gaffigan",
+  "dataset": "Jim-Gaffigan",
   "audio": {
     "sample_rate": 22050,
     "quality": "medium"
