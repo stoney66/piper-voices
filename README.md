@@ -106,8 +106,8 @@ mkdir -p /storage/TextyMcSpeechy/tts_dojo/DATASETS/tom_servo
 cd /storage/TextyMcSpeechy/tts_dojo
 ./newdojo.sh tom_servo
 
-cp /storage/voice_training/speaker_clips/servo-complete/*.wav ~/TextyMcSpeechy/tts_dojo/DATASETS/tom_servo/
-cp /storage/voice_training/speaker_clips/servo-complete/metadata.csv ~/TextyMcSpeechy/tts_dojo/DATASETS/tom_servo/
+cp /storage/voice_training/speaker_clips/servo-complete/*.wav /storage/TextyMcSpeechy/tts_dojo/DATASETS/tom_servo/
+cp /storage/voice_training/speaker_clips/servo-complete/metadata.csv /storage/TextyMcSpeechy/tts_dojo/DATASETS/tom_servo/
 
 cd /storage/TextyMcSpeechy/tts_dojo/DATASETS
 ./create_dataset.sh tom_servo
