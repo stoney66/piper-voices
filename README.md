@@ -71,8 +71,8 @@ python3 cleanup_transcripts.py --input speaker_clips/crow-s3/
 
 mv speaker_clips/crow-s3/* speaker_clips/crow-complete/
 
-cat speaker_clips/joel-complete/*_transcripts.txt > speaker_clips/joel-complete//metadata.csv
-sed -i 's/\.wav|/|/' speaker_clips/joel-complete//metadata.csv
+cat speaker_clips/joel-complete/*_transcripts.txt > speaker_clips/joel-complete/metadata.csv
+sed -i 's/\.wav|/|/' speaker_clips/joel-complete/metadata.csv
 ```
 
 ## Check length all wav files dir walk
