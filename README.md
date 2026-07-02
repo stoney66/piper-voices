@@ -17,7 +17,6 @@ pip install whisperx
 pip install demucs
 pip install soundfile
 pip install yt-dlp
-docker exec -u root textymcspeechy-piper /app/piper/src/python/.venv/bin/pip install onnx pathvalidate
 ```
 
 yt-dlp -x --audio-format wav -o "%(title)s.%(ext)s" https://www.youtube.com/
